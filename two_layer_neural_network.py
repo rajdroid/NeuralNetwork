@@ -3,14 +3,14 @@ import numpy
 from neural_network import BaseNeuralNetwork
 
 
-class ThreeLayerNeuralNetwork (BaseNeuralNetwork):
+class TwoLayerNeuralNetwork (BaseNeuralNetwork):
     """
-    A three layer Neural Network with sigmoid activation function.
+    A two layer Neural Network with sigmoid activation function.
     """
 
     def __init__(self, input_nodes, hidden_nodes, output_nodes, learning_rate):
         """
-        Construct three layer Neural Network.
+        Construct two layer Neural Network.
         """
         super().__init__(input_nodes, hidden_nodes,
                          output_nodes, learning_rate)
@@ -29,7 +29,7 @@ class ThreeLayerNeuralNetwork (BaseNeuralNetwork):
 
     def train(self, input_vector, target_vector):
         """
-        Train three layer Neural Network.
+        Train two layer Neural Network.
         """
         # Convert input and target vectors into two-dimensional array
         inputs = numpy.array(input_vector, ndmin=2).T
